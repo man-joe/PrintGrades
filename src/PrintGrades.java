@@ -36,8 +36,9 @@ public class PrintGrades {
         String y_or_n;
 
         do{
-            System.out.println("Enter an exam score: ");
+            System.out.print("Enter an exam score: ");
             exam_score = sc.nextInt();
+            System.out.println();
 
             if(exam_score >= 97 && exam_score <=100)
                 System.out.println("Good Job. Your grade is A+");
@@ -64,7 +65,7 @@ public class PrintGrades {
             else
                 System.out.println("Bad Input.");
 
-            System.out.println("Do you want enter another score(Y/N)?");
+            System.out.print("Do you want enter another score(Y/N)? ");
             y_or_n = sc.next();
             if(y_or_n.toLowerCase().equals("y"))
                 cont = true;
@@ -72,7 +73,6 @@ public class PrintGrades {
                 cont = false;
 
         } while(cont);
-
 
     }
 }
